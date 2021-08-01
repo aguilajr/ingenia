@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdbool.h>
+#include "robotAPI.h"
 #include "robot.h"
 
 #define SENSOR_THRESHOLD 128
@@ -22,7 +23,7 @@ int main(void) {
     return 0;
 }
 
-void inicialization() {
+void initialization() {
     SPIInit();
     TimerInit();
 }
